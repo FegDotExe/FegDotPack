@@ -1,0 +1,2 @@
+execute as @e[type=armor_stand,name="fegDsCounter",scores={fegDsStart=1}] at @s run function deathswap:game_start
+execute as @e[type=armor_stand,name="fegDsCounter",scores={fegDsGame=1}] at @s run function deathswap:game

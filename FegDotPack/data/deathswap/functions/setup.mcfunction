@@ -1,10 +1,20 @@
 #TODO: una score per il timer massimo, una per il minimo, una per il momentaneo e una per la diminuzione per round
+scoreboard objectives add fegDsStart dummy
 scoreboard objectives add fegDsGame dummy
+scoreboard objectives add fegDsRound dummy
 scoreboard objectives add fegDsTimer dummy
+#Main game timer
 scoreboard objectives add fegDsTimerS dummy
+#Standard time value
 scoreboard objectives add fegDsTimerMax dummy
 scoreboard objectives add fegDsTimerMin dummy
 scoreboard objectives add fegDsTimerSub dummy
+#Amount of time subtracted each round
+scoreboard objectives add fegDsDisSec dummy
+#Seconds displayer
+scoreboard objectives add feg20 dummy
+#Fixed 20
+#TODO: add many scores for place switching
 
 #Resettaggio preventivo delle scores di attivazione
 #Tenere presente che @s si riferisce a fegCounter che esegue la cosa
