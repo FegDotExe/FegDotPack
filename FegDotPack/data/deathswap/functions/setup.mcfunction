@@ -1,6 +1,8 @@
 #TODO: una score per il timer massimo, una per il minimo, una per il momentaneo e una per la diminuzione per round
 scoreboard objectives add fegDsStart dummy
 scoreboard objectives add fegDsGame dummy
+scoreboard objectives add fegDsInGame dummy
+#Determines if a player is still playing
 scoreboard objectives add fegDsRound dummy
 scoreboard objectives add fegDsTimer dummy
 #Main game timer
@@ -14,7 +16,14 @@ scoreboard objectives add fegDsDisSec dummy
 #Seconds displayer
 scoreboard objectives add feg20 dummy
 #Fixed 20
-#TODO: add many scores for place switching
+scoreboard objectives add fegDsPlayers dummy
+#Amount of players
+scoreboard objectives add fegDsToSwitch dummy
+#Amount of players to be switched (whose fegDsSwitched is 0)
+scoreboard objectives add fegDsSwitched dummy
+#Is 1 for players who have been switched. Is 0 for players who have not.//For armor stands, this is used as a prov score in teleport_players
+scoreboard objectives add fegDsSwId dummy
+#An id which differentiates each player
 
 #Resettaggio preventivo delle scores di attivazione
 #Tenere presente che @s si riferisce a fegCounter che esegue la cosa
