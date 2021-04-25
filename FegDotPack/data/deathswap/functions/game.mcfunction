@@ -7,5 +7,6 @@ scoreboard players operation @s fegDsDisSec /= @s feg20
 title @a actionbar {"score":{"name":"@e[type=armor_stand,name=\"fegDsCounter\",limit=1]","objective":"fegDsDisSec"}}
 #TODO: score which makes this actionbar optional
 
-#TODO: cose da fare quando il timer arriva a 0
+execute as @e[type=player,limit=1,scores={fegDeathCount=1..}] at @s run function deathswap:died
+
 execute as @s[scores={fegDsTimer=..0}] at @s run function deathswap:new_round
