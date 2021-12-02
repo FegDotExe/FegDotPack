@@ -2,6 +2,8 @@
 scoreboard players operation @s fegDsTimer = @s fegDsTimerS
 scoreboard players operation @s fegDsTimerC = @s fegDsTimerS
 
+time set day
+
 gamemode survival @a
 clear @a
 effect give @a regeneration 1 255 true
